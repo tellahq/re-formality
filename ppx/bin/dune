@@ -1,5 +1,6 @@
 (executable
-  (name bin)
-  (public_name re-formality-ppx)
-  (libraries re-formality-ppx.lib)
+  (package ppx_re_formality)
+  (name ppx_re_formality)
+  (public_name ppx_re_formality)
+  (libraries ppx_re_formality.lib)
 )

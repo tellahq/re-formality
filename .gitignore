@@ -16,4 +16,4 @@ yarn-error.log
 /lib/lib/
 /specs/lib/
 /ppx/test/**/*.cm[itj]
-re-formality-ppx.install
+ppx_re_formality.install
