@@ -1,3 +1,5 @@
+open Belt;
+
 include FormalityCompat__Validation.Result;
 include FormalityCompat__Validation.Sync;
 include FormalityCompat__PublicHelpers;

@@ -1,3 +1,5 @@
+open Belt;
+
 [@ocaml.warning "-30"];
 
 type update('action, 'state) =

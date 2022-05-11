@@ -1,3 +1,5 @@
+open Belt;
+
 module Startegy = FormalityCompat__Strategy;
 
 module Result = {

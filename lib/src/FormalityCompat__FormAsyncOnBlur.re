@@ -1,3 +1,5 @@
+open Belt;
+
 module Validation = FormalityCompat__FormAsyncOnBlurWithId.Validation;
 
 module type Form = {

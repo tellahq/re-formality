@@ -1,3 +1,5 @@
+open Belt;
+
 module Debouncer = Formality__Debouncer;
 module ReactUpdate = Formality__ReactUpdate;
 

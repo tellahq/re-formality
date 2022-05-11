@@ -1,3 +1,5 @@
+open Belt;
+
 module Validation = FormalityCompat__FormAsyncOnChangeWithId.Validation;
 
 let defaultDebounceInterval = FormalityCompat__FormAsyncOnChangeWithId.defaultDebounceInterval;

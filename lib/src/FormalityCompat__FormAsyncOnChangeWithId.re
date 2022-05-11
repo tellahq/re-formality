@@ -1,3 +1,5 @@
+open Belt;
+
 module Validation = FormalityCompat__Validation;
 module Strategy = FormalityCompat__Strategy;
 module FormStatus = FormalityCompat__FormStatus;

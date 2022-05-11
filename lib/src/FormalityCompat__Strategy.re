@@ -1,3 +1,5 @@
+open Belt;
+
 type t =
   | OnFirstBlur
   | OnFirstChange

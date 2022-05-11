@@ -1,15 +1,11 @@
 {
   "name": "re-formality",
   "sources": ["lib/src"],
-  "bs-dependencies": [
-    "@rescript/react",
-    "rescript-debounce"
-  ],
+  "bs-dependencies": ["@rescript/react", "rescript-debounce"],
   "reason": {
     "react-jsx": 3
   },
   "refmt": 3,
-  "bsc-flags": ["-open Belt"],
   "package-specs": {
     "module": "es6",
     "in-source": true

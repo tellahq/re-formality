@@ -1,3 +1,5 @@
+open Belt;
+
 module Dom = {
   let preventDefault = (submit, event) => {
     if (!event->ReactEvent.Form.defaultPrevented) {
