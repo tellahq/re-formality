@@ -8,12 +8,7 @@
     "type": "git",
     "url": "https://github.com/MinimaHQ/re-formality.git"
   },
-  "workspaces": [
-    "lib",
-    "specs",
-    "examples",
-    "ppx/sandbox"
-  ],
+  "workspaces": ["lib", "specs", "examples", "ppx/sandbox"],
   "keywords": [
     "react",
     "rescript-react",
@@ -26,5 +21,14 @@
     "forms",
     "validation"
   ],
-  "private": true
+  "scripts": {
+    "start": "yarn run res:watch",
+    "build": "rescript build -with-deps",
+    "watch": "rescript build -w",
+    "clean": "rescript clean",
+    "format": "rescript format -all"
+  },
+  "dependencies": {
+    "rescript-debounce": "1.0.0"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "re-formality",
-  "sources": ["src"],
+  "sources": ["lib/src"],
   "bs-dependencies": [
     "@rescript/react",
     "rescript-debounce"
