@@ -11,8 +11,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [16.x]
-        os: [macOS-latest, windows-latest]
+        node-version: [ 16.x ]
+        os: [ macOS-latest, windows-latest ]
 
     steps:
       - name: Checkout repo
@@ -85,10 +85,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ ubuntu-latest ]
 
     container:
-      image: alexfedoseev/alpine-node-yarn-esy:0.0.9
+      image: alexfedoseev/alpine-node-yarn-esy:0.0.10
 
     steps:
       - name: Checkout repo
@@ -106,7 +106,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ${{ steps.print-yarn-cache.outputs.yarn-cache }}
-          key: ${{ matrix.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-v1
+          key: ${{ matrix.os }}-yarn-${{ hashFiles('yarn.lock') }}-v1
 
       - name: Install Yarn deps
         run: yarn install
@@ -123,7 +123,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ${{ steps.print-esy-cache.outputs.esy-cache }}
-          key: ${{ matrix.os }}-esy-${{ hashFiles('**/index.json') }}
+          key: ${{ matrix.os }}-esy-${{ hashFiles('esy.lock/index.json') }}
 
       - name: Build ppx
         run: esy build

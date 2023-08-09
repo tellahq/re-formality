@@ -1,25 +1,21 @@
 {
-  "name": "ppx_re_formality",
-  "version": "0.0.0",
-  "description": "Form validation tool for @rescript/react",
-  "author": "Alex Fedoseev <alex@fedoseev.mx>",
-  "license": "MIT",
-  "esy": {
-    "build": "dune build -p #{self.name}",
-    "buildsInSource": "_build"
-  },
-  "dependencies": {
-    "ocaml": ">= 4.12.0",
-    "@opam/reason": ">= 3.7.0",
-    "@opam/dune": ">= 3.0",
-    "@opam/ppxlib": "0.26.0",
-    "@opam/ocamlfind": "1.9.3"
-  },
-  "devDependencies": {
-    "@opam/merlin": "*"
-  },
-  "resolutions": {
-    "@opam/reason": "reasonml/reason:reason.opam#4f6ff7616bfa699059d642a3d16d8905d83555f6",
-    "ocaml": "esy-ocaml/ocaml#81dcfe8622668f5c1046f1e1e99553b93b627478"
-  }
+    "name": "ppx_re_formality",
+    "version": "0.0.0",
+    "description": "Form validation tool for @rescript/react",
+    "author": "Alex Fedoseev <alex@fedoseev.mx>",
+    "license": "MIT",
+    "esy": {
+        "build": "dune build -p #{self.name}",
+        "buildsInSource": "_build"
+    },
+    "dependencies": {
+        "ocaml": "4.14.0",
+        "@opam/reason": ">= 3.9.0",
+        "@opam/dune": ">= 3.8.0",
+        "@opam/ppxlib": "0.29.1",
+        "@opam/ocamlfind": "1.9.6"
+    },
+    "devDependencies": {
+        "@opam/merlin": "*"
+    }
 }
